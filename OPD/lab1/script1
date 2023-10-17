@@ -1,0 +1,110 @@
+#!/bin/sh
+
+#-------------------My code-----------------
+cd ~
+#Создаем основную рабочую директорию
+mkdir lab0
+cd lab0
+#!!!!!!!!!Создаем все файлы и папки!!!!!!!!!
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir anorith4
+cd anorith4
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > sealeo <<stop
+Ходы Aqua Tail Brine Dive Double-Edge Icy Wind Iron Tail
+Mud-Slap Rollout Signal Beam Sleep Talk Snore Super Fang Water
+Pulse
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > crawdaunt <<stop
+satk=9 sdef=6 spd=6
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > duosion <<stop
+Способности Reflect
+Rollout Snatch Hidden Power Light Screen Charm Recover Psyshock
+Endeavor Future Sight Pain Split Psychic Skill Swap Heal Block Wonder
+Room
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > electivire0 <<stop
+Возможности Overland=8 Surface=5 Jump=2 Power=5
+Intelligence=4 Zapper=0
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > flygon9 <<stop
+Возможности Overland=8 Surface=4
+Sky=14 Burrow=6 Jump=3 Power=4 Intelligence=4
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir scraggy6
+cd scraggy6
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir pichu
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir primeape
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > staravia <<stop
+Развитые
+способности Reckless Big Pecks
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > mienfoo <<stop
+Тип диеты
+Omnivore
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > zorua <<stop
+Ходы Bounce Covet Dark Pulse Foul Play Hyper Voice
+Knock Off Sleep Talk Snatch Snore Spite Trick
+Uproar
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+mkdir stoutland4
+cd stoutland4
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir teddiursa
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > phanpy <<stop
+weigth=73.9 height=20.0 atk=6 def=6
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > gothotita <<stop
+Ходы
+Covet Foul Play Gravity Heal Bell Helping Hand Magic Coat Magic Room
+Recycle Role Play Signal Beam Skill Swap Sleep Talk Snatch Trick
+Uproar Zen Headbutt
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir beedrill
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir krokorok
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cat > tentacool2 <<stop
+Ходы Bind Brine Dive Double-Edge Giga
+Drain Icy Wind Knock Off Magic Coat Role Play Sleep Talk Snore
+stop
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

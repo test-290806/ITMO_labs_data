@@ -1,0 +1,23 @@
+#!/bin/sh
+
+#-------------------My code-----------------
+#Выставляем права 777 для всех файлов чтобы копирование выполнялось коректно
+chmod -R 700 ~/lab0
+#!!!!!!!!!!!!!!Копирование файлов!!!!!!!!!!!
+
+cp ~/lab0/tentacool2 ~/lab0/scraggy6/mienfootentacool
+
+ln ~/lab0/flygon9 ~/lab0/stoutland4/phanpyflygon
+
+cp -r ~/lab0/anorith4 ~/lab0/scraggy6/pichu/
+
+ln -s ~/lab0/electivire0 ~/lab0/scraggy6/zoruaelectivire
+
+cat ~/lab0/scraggy6/mienfoo ~/lab0/scraggy6/staravia > ~/lab0/electivire0_86
+
+ln -s ~/lab0/anorith4 ~/lab0/Copy_23
+
+cp ~/lab0/flygon9 ~/lab0/stoutland4/teddiursa/
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#Возвращаем права как было
+./script2

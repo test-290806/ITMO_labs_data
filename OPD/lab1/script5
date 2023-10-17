@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#-------------------My code-----------------
+
+cd ~/lab0
+
+rm -f tentacool2
+rm -f anorith4/crawdaunt
+rm -f scraggy6/zoruaelectivire
+rm -f stoutland4/phanpyflygon
+rm -rf stoutland4
+rm -rf scraggy6/pichu

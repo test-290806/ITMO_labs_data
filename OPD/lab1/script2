@@ -1,0 +1,59 @@
+#!/bin/sh
+
+#-------------------My code-----------------
+#!!!!!!!!!!!!!!Назначаем права!!!!!!!!!!!!!!
+cd ~/lab0
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd anorith4
+#---r--rw-
+chmod u=---,g=r--,o=rw- sealeo
+#rw--w-r--
+chmod u=rw-,g=w,o=r-- crawdaunt
+#---rw-r--
+chmod 064 duosion
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#rwx------
+chmod 700 anorith4
+#------rw-
+chmod 006 electivire0
+#r-----r--
+chmod 404 flygon9
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd scraggy6
+#rwx-wxrwx
+chmod a=rwx,g-r pichu
+#r-x--x-wx
+chmod u=rx,g=x,o=wx primeape
+#rw-------
+chmod 600 staravia
+#r--r-----
+chmod 440 mienfoo
+#r-----r--
+chmod 404 zorua
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#-wx-wx-wx
+chmod a=wx scraggy6
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd stoutland4
+#rwxrwx---
+chmod 770 teddiursa
+#--r--r--
+chmod 044 phanpy
+#rw-rw----
+chmod 660 gothotita
+#rwxrw-r--
+chmod 764 beedrill
+#r-x-w-r--
+chmod u=rx,g=w,o=r-- krokorok
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd ..
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#rwxrw-r--
+chmod 764 stoutland4
+#r--r-----
+chmod 440 tentacool2
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
