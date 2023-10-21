@@ -33,7 +33,7 @@ n = 1
 for s in m:
     print(f'TEST #{n}')
     print(s)
-    match = re.findall(r'=-{O', s)
+    match = re.findall(r'=-\{O', s)
     print(f'Smiles found: {match}')
     print(f'Correct answer: {chek(s)}')
     print(f'Regex answer: {len(match)}')
