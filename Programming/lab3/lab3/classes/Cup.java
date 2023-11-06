@@ -1,9 +1,9 @@
 package lab3.classes;
 
-public class Cup extends Essence{
+public class Cup extends Essence {
     private String material;
     private String color;
-    public Cup(String name, String material, String color){
+    public Cup(String name, String material, String color) {
         super(name);
         this.color = color;
         this.material = material;

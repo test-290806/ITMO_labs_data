@@ -5,15 +5,15 @@ import java.util.Objects;
 public abstract class Essence {
     private String name = "Безымянный";
 
-    public Essence(String name){
+    public Essence(String name) {
         this.name = name;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 

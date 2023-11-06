@@ -38,10 +38,10 @@ public enum Action implements Describable {
             return "lab3.enums.Action{STARE}";
         }
     };
-    public String applySelfAction(Human var1){
+    public String applySelfAction(Human var1) {
         return var1.getName() + " " + this.describe(var1.getGender());
     }
-    public String applyEssenceAction(Human var1, Essence var2){
+    public String applyEssenceAction(Human var1, Essence var2) {
         return var1.getName() + " " + this.describe(var1.getGender()) + " " + var2.getName();
     }
 }

@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Human extends Essence implements Alive {
     private State state;
     private Gender gender;
-    public Human(String name, Gender gender){
+    public Human(String name, Gender gender) {
         super(name);
         this.gender = gender;
         this.state = State.NORMAL;
@@ -21,14 +21,24 @@ public class Human extends Essence implements Alive {
         return this.state;
     }
 
-    public Gender getGender(){
+    public Gender getGender() {
         return this.gender;
     }
 
     @Override
-    public String setState(State state) {
+    public void setState(State state, Essence obj) {
         this.state = state;
-        return this.getName() + " " + this.state.describe(this.gender);
+        System.out.println(this.getName() + " " + this.state.describe(this.gender));
+
+        if(state == State.SCARED) System.out.println(this.completeAction(Action.BITE, obj));
+    }
+
+    @Override
+    public void setState(State state) {
+        this.state = state;
+        System.out.println(this.getName() + " " + this.state.describe(this.gender));
+
+        if(state == State.NERVOUS) System.out.println(this.completeAction(Action.SHIFT));
     }
 
     @Override
@@ -39,7 +49,7 @@ public class Human extends Essence implements Alive {
     public String completeAction(Action action) {
         return action.applySelfAction(this);
     }
-    public String say(String phrase){
+    public String say(String phrase) {
 
         String verb = switch (this.gender){
             case MALE -> "сказал";
@@ -47,7 +57,7 @@ public class Human extends Essence implements Alive {
         };
         return this.getName() + " " + verb + ": " + phrase;
     }
-    public String say(String phrase, Human var1){
+    public String say(String phrase, Human var1) {
         String verb = switch (this.gender){
             case MALE -> "сказал";
             case FEMALE -> "сказала";
