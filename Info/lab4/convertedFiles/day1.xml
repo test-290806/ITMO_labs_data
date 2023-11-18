@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<root>
+	<dayTable1>
+		<day>Вторник</day>
+		<lesson1>
+			<time>
+				<start>8:20</start>
+				<end>9:50</end>
+			</time>
+			<fiber>Прогр 2.6</fiber>
+			<room>ауд. 1320</room>
+			<address>Кронверкский пр., д.49, лит.А</address>
+			<lesson>Программирование</lesson>
+			<lecturer>Харитонова Анастасия Евгеньевна</lecturer>
+			<lesson-format>Очный</lesson-format>
+		</lesson1>
+		<lesson2>
+			<time>
+				<start>10:00</start>
+				<end>11:30</end>
+			</time>
+			<fiber>Прогр 2.6</fiber>
+			<room>ауд. 1320</room>
+			<address>Кронверкский пр., д.49, лит.А</address>
+			<lesson>Программирование</lesson>
+			<lecturer>Харитонова Анастасия Евгеньевна</lecturer>
+			<lesson-format>Очный</lesson-format>
+		</lesson2>
+		<lesson3>
+			<time>
+				<start>11:40</start>
+				<end>13:10</end>
+			</time>
+			<fiber>ДИСКР МАТ 2</fiber>
+			<room>ауд. 2337</room>
+			<address>Кронверкский пр., д.49, лит.А</address>
+			<lesson>Основы дискретной математики (базовый уровень)</lesson>
+			<lecturer>Поляков Владимир Иванович</lecturer>
+			<lesson-format>Очный</lesson-format>
+		</lesson3>
+		<lesson4>
+			<time>
+				<start>13:30</start>
+				<end>15:00</end>
+			</time>
+			<fiber>ДИСКР МАТ 2</fiber>
+			<room>ауд. 2337</room>
+			<address>Кронверкский пр., д.49, лит.А</address>
+			<lesson>Основы дискретной математики (базовый уровень)</lesson>
+			<lecturer>Поляков Владимир Иванович</lecturer>
+			<lesson-format>Очный</lesson-format>
+		</lesson4>
+	</dayTable1>
+</root>

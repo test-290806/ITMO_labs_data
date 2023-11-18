@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <InfTag>-inf</InfTag>
+  <expTag>1e-09</expTag>
+  <key name="-InfTag">-inf</key>
+  <Na-N>nan</Na-N>
+  <nums>
+    <item>1</item>
+    <item>-1</item>
+    <item>1315600000.0</item>
+    <item>
+      <item>something</item>
+      <item>True</item>
+    </item>
+    <item>!&amp;@#&amp;@)!sdf&gt; &lt;dpoiu</item>
+    <item>
+      <key name="dv s">
+        <ins>nan</ins>
+        <null/>
+      </key>
+    </item>
+  </nums>
+</root>

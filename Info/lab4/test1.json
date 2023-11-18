@@ -1,0 +1,8 @@
+{
+  "InfTag": -Infinity,
+  "expTag": 1e-9,
+  "-InfTag": -Infinity,
+  "Na-N": NaN,
+  "nums": [1, -1, 1.3156e9, ["something", true],
+  "!&@#&@)!sdf> <dpoiu", {"dv s": {"ins": NaN, "null": null}}]
+}
