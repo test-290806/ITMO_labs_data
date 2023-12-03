@@ -16,7 +16,7 @@ public class Human extends Essence implements Alive {
     private State state;
     private Gender gender;
     private String job = "Безработный";
-    private ArrayList<Human.ClothesItem> clothes = new ArrayList<Human.ClothesItem>();
+    private ArrayList<Human.ClothesItem> clothes = new ArrayList<>();
     public Human(String name, Gender gender) {
         super(name);
         this.gender = gender;
@@ -63,6 +63,21 @@ public class Human extends Essence implements Alive {
             }
         }
     }
+    public void say(String phrase, Human companion) {
+        (new Human.Phrase(phrase, companion)).say();
+    }
+    public void shout(String phrase) {
+        (new Human.Phrase(phrase, "закричал")).say();
+    }
+    public void order(String phrase, Human companion) {
+        (new Human.Phrase(phrase,"приказал", companion)).say();
+    }
+    public void explain(String phrase) {
+        (new Human.Phrase(phrase, "объяснил")).say();
+    }
+    public void answer(String phrase) {
+        (new Human.Phrase(phrase, "ответил")).say();
+    }
 
     public static class ClothesItem extends Thing {
         protected boolean weared = false;
@@ -84,7 +99,7 @@ public class Human extends Essence implements Alive {
 
         public void wear(Human person) throws WearingException {
             if (this.weared) {
-                throw new WearingException("Человек '" + person.getName() + "' пытается надеть вещь '" + this.getName() + "' которая уже надета!");
+                throw new WearingException("Человек '" + person.getName() + "' пытается надеть вещь '" + this.getName() + "' которая уже надета человеком '" + this.carrier.getName() + "'!", this, person);
             }
             this.weared = true;
             this.carrier = person;
@@ -99,7 +114,7 @@ public class Human extends Essence implements Alive {
 
         public void unWear() throws WearingException {
             if (!this.weared) {
-                throw new WearingException("Объект пытается снять вещь '" + this.getName() + "' которая не надета");
+                throw new WearingException("Объект пытается снять вещь '" + this.getName() + "' которая не надета", this, this.carrier);
             }
             switch (carrier.getGender()) {
                 case MALE -> System.out.println(carrier.getName() + " снял " + this.getName());
@@ -176,36 +191,18 @@ public class Human extends Essence implements Alive {
     @Override
     public void completeAction(Action action) {
         action.applySelfAction(this);
-    }
-    public void say(String phrase) {
-        (new Human.Phrase(phrase)).say();
-    }
-    public void say(String phrase, Human companion) {
-        (new Human.Phrase(phrase, companion)).say();
-    }
-    public void shout(String phrase) {
-        (new Human.Phrase(phrase, "закричал")).say();
-    }
-    public void shout(String phrase, Human companion) {
-        (new Human.Phrase(phrase,"закричал", companion)).say();
-    }
-    public void order(String phrase) {
-        (new Human.Phrase(phrase, "приказал")).say();
-    }
-    public void order(String phrase, Human companion) {
-        (new Human.Phrase(phrase,"приказал", companion)).say();
-    }
-    public void explain(String phrase) {
-        (new Human.Phrase(phrase, "объяснил")).say();
-    }
-    public void explain(String phrase, Human companion) {
-        (new Human.Phrase(phrase,"объяснил", companion)).say();
-    }
-    public void answer(String phrase) {
-        (new Human.Phrase(phrase, "ответил")).say();
-    }
-    public void answer(String phrase, Human companion) {
-        (new Human.Phrase(phrase,"ответил", companion)).say();
+        if(action == Action.SHAKE){
+            ArrayList<MagicClothesItem> itemsToFly = new ArrayList<>();
+            for(Human.ClothesItem item : this.clothes){
+                if(item instanceof MagicClothesItem) {
+                    itemsToFly.add((MagicClothesItem) item);
+                }
+            }
+
+            for(MagicClothesItem item : itemsToFly){
+                item.fly();
+            }
+        }
     }
 
     @Override

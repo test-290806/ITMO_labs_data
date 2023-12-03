@@ -7,7 +7,7 @@ import java.util.Objects;
 public abstract class Essence {
     private String name = "Безымянный";
 
-    public Essence(String name){
+    public Essence(String name) {
         if(name == null || name == ""){
             throw new NameError("Сущность должна иметь имя!");
         }

@@ -111,19 +111,6 @@ public enum Action implements Describable {
             return "lab4.enums.Action{ROTATETO}";
         }
     },
-    WRITE(false){
-        @Override
-        public String describe(Gender gender) {
-            return switch (gender){
-                case UNKNOWN -> "записывают";
-                default -> "записывает";
-            };
-        }
-        @Override
-        public String toString() {
-            return "lab4.enums.Action{WRITE}";
-        }
-    },
     SQUIRM(false){
         @Override
         public String describe(Gender gender) {
@@ -145,7 +132,7 @@ public enum Action implements Describable {
     }
     public void applySelfAction(Human var1){
         if(this.isEssenceRequired){
-            throw new NoObjectForAction("Необходимо указать объект к которму применено действие!");
+            throw new NoObjectForAction(var1, this);
         }
         System.out.println(var1.getName() + " " + this.describe(var1.getGender()));
     }

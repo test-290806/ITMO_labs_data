@@ -2,9 +2,6 @@ package lab4.classes;
 
 import lab4.Exceptions.WearingException;
 import lab4.enums.*;
-import lab4.interfaces.Flyable;
-
-import javax.swing.event.HyperlinkEvent;
 
 public class Story {
     private Story() {}
@@ -34,13 +31,16 @@ public class Story {
         hat.answer("Она не моя-с!");
         king.shout("Краденая!");
         king.completeAction(Action.ROTATETO, jury);
-        jury.write("Шляпа - вор!", "Gotic");
+        Object result = jury.write("Шляпа - вор!", "Gotic");
+        System.out.println("Результат: " + result);
         hat.explain("Я их держу для продажи-с, у меня своих нет, ведь я " + hat.getJob());
+
         try {
             glasses.wear(queen);
         }catch (WearingException e){
             System.out.println(e.getMessage());
         }
+
         queen.completeAction(Action.GAZE, hat);
 
         hat.setName("Свидетель");
@@ -53,11 +53,5 @@ public class Story {
         sonia.completeAction(Action.CHANGEPOS);
         queen.order("принесите-ка мне программу вчерашнего концерта!", someJudge);
         hat.completeAction(Action.SHAKE);
-//        try {
-//            shoes.unWear();
-//        }catch (WearingException e){
-//            System.out.println(e.getMessage());
-//        }
-        shoes.fly();
     }
 }
