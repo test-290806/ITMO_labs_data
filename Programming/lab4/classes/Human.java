@@ -6,13 +6,14 @@ import lab4.enums.Action;
 import lab4.enums.Gender;
 import lab4.enums.State;
 import lab4.interfaces.Alive;
+import lab4.interfaces.Talkable;
 import lab4.interfaces.Writeable;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Human extends Essence implements Alive {
+public class Human extends Essence implements Alive, Talkable {
     private State state;
     private Gender gender;
     private String job = "Безработный";
